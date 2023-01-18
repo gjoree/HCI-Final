@@ -1,0 +1,11 @@
+image: node:latest
+
+stages:
+  - test
+
+test_server:
+  stage: test 
+  script:
+    - cd "$CI_PROJECT_DIR/CMS"
+    - npm install
+    - echo "Dependencies installed"
